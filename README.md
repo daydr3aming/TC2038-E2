@@ -1,7 +1,7 @@
 # E2.-Actividad-Integradora-2
 Escribe en C++ un programa que ayude a una empresa que quiere incursionar en los servicios de Internet respondiendo a la situación problema 2.
 
-# TODO:
+## TODO:
 * Codigo de lectura de archivos, el archivo es una matriz de adyacencia de grafos ponderados. (cada peso es la distancia en KM entre colonias)
 
 * "1. Forma de cablear las colonias con fibra (lista de arcos de la forma (A,B))" entonces yo supongo que imprimir todas las posibilidades en lista
