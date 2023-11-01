@@ -12,4 +12,5 @@ Escribe en C++ un programa que ayude a una empresa que quiere incursionar en los
 
 * Instalar librerias de geometria computacional y sacar lista de poligonos
 
+Y creo que ya con esto terminamos, suena sencillo
 
