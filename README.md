@@ -4,11 +4,13 @@ Escribe en C++ un programa que ayude a una empresa que quiere incursionar en los
 ## TODO:
 * Codigo de lectura de archivos, el archivo es una matriz de adyacencia de grafos ponderados. (cada peso es la distancia en KM entre colonias)
 
-* "1. Forma de cablear las colonias con fibra (lista de arcos de la forma (A,B))" entonces yo supongo que imprimir todas las posibilidades en lista
+* "1. Forma de cablear las colonias con fibra (lista de arcos de la forma (A,B))" Algoritmo desconocido por ahora
   
-* Implementar Algoritmo de dijstra para solucionar punto 2, la ruta mas corta para que alguien visiste todas las colonias una vez y al final regrese a la colonia origen.
+* Implementar TSP para solucionar punto 2, la ruta mas corta para que alguien visiste todas las colonias una vez y al final regrese a la colonia origen.
 
-* Leer otra matriz de n x n que represente la maxima transmision de datos entre i y j e imprimir este valor como el valor de flujo maximo
+* Leer otra matriz de n x n que represente la maxima transmision de datos entre i y j
+
+* Usamos el algoritmo de flujo (buscar en diapositivas) para poder imprimir esto
 
 * Instalar librerias de geometria computacional y sacar lista de poligonos
 
