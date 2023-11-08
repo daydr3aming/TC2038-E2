@@ -4,11 +4,40 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#include <queue>
 
 using namespace std;
 
-void MST(){
-    // Algoritmo de Kruskal o Prim
+void MST(vector<vector<int>> &nbhs){
+    // Prims Algorithm
+    int V = nbhs.size();
+    vector<int> key(V, INT_MAX);
+    vector<int> parent(V, -1);
+    vector<bool> inMST(V, false);
+
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+
+    key[0] = 0;
+
+    pq.push({0, 0});
+
+    while (!pq.empty()){
+        int u = pq.top().second;
+        pq.pop();
+        inMST[u] = true;
+
+        // Exploramos todo lo adjacente a 
+        for (int v = 0; v < V; ++v) {
+            if (!inMST[v] && nbhs[u][v] < key[v]) {
+                key[v] = nbhs[u][v];
+                parent[v] = u;
+                pq.push({key[v], v});
+            }
+        }
+    }
+    for (int i = 1; i < V; ++i) {
+        cout << "(" << parent[i] << "," << i << ")" << " KM: " <<nbhs[i][parent[i]] << endl;
+    }
 }
 
 void TSP(){
@@ -76,6 +105,10 @@ int main() {
 
     // Aqui mandamos a llamar e imprimir los algoritmos y todo gucci
     // Por cierto, puse muchos endl y couts para debugear por ahora, se pueden borrar
+
+    // MST Prim
+    cout << "Como conectar toda la colonia de forma optima: " << endl;
+    MST(nbhs);
 
     return 0;
 }
