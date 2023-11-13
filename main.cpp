@@ -229,7 +229,7 @@ int main() {
     int sink = 3;
 
     int maxFlow = MaxFlow(maxData, source, sink);
-    cout << "Flujo maximo de " << source << " a " << sink << endl;
+    cout << "Flujo maximo de informacion de " << source << " a " << sink << ":" <<endl;
     cout << maxFlow << endl;
 
     return 0;
