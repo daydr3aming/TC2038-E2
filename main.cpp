@@ -220,7 +220,7 @@ int main() {
     cout << "Kilometros minimos para visitar todas las colonias y volver al origen: " << endl;
     cout << min_path << endl;
 
-    int start = 0;  // Assuming the start vertex is 0 (A)
+    int start = 0;  // Asumimos que el vecindario inicial es 0
     printRoute(parent, start, n);
     cout << endl;
 
